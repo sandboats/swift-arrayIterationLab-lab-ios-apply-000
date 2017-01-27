@@ -15,7 +15,7 @@
  */
 // write your code here
 
-
+var sense: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,7 +26,7 @@
 // write your code here
 
 
-
+var list = [1...10]
 
 
 
@@ -36,7 +36,10 @@
  */
 // write your code here
 
-
+for num in list{
+    
+    print(num)
+}
 
 
 
@@ -47,7 +50,10 @@
  */
 // write your code here
 
-
+for i in sense{
+    
+    print(i)
+}
 
 
 
@@ -59,7 +65,16 @@
 // write your code here
 
 
-
+func takeNames(names: [String]){
+    
+    
+    for name in names{
+        
+        print("Top of the morning \(name)!")
+    }
+    
+    
+}
 
 
 
@@ -68,6 +83,23 @@
  */
 // write your code here
 
+
+func takeNames(ints: [Int])-> [Int]{
+    
+    var i: Int = 0
+    var newInt: [Int] = []
+    for inta in ints{
+        
+        if(inta < 50){
+            
+            newInt[i] = inta
+            i = i+1
+        }
+        
+    }
+    
+    return newInt
+}
 
 
 
